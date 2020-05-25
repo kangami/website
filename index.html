@@ -26,6 +26,8 @@
     <script src="js/plugins.js"></script>
     <script src="js/min/waypoints.min.js"></script>
     <script src="js/jquery.counterup.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 
     <!-- Google Map -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -64,10 +66,9 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="work.html">Education & Experience</a></li>
-                    <li><a href="portefolio.html">Portfolio</a></li>
-                    <li><a href="#">Others</a></li>
+                    <li><a href="#intro">About Me</a></li>
+                    <li><a href="#portfolio" class="pro">Projects </a></li>
+                    <li><a href="#contact-form">Contact</a></li>
                     <li>
                       <a href="https://www.linkedin.com/in/karim-ngami/" target="_blank"><i class="fa fa-linkedin"></i></a>
                     </li>
@@ -85,7 +86,7 @@
     </header><!-- header close -->
         
     <!-- Slider Start -->
-    <section id="slider">
+   <!-- <section id="slider">
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-md-offset-2">
@@ -96,21 +97,50 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
+
+    <div class="container">
+      <div class="row poste">
+        <div class="col-sm-4 col-sm-push-4">
+          <p class="">
+            <h2 class="name">KARIM NGAMI</h2>
+            <span > Software Engineer</span> <br><br>
+            <button class="btn btn-success"><a class="resume" href="https://www.dropbox.com/s/0nzta31t2fc8ofx/KarimNgami-Cv.pdf?dl=0" target="_blank">View Resume</a></button>
+          </p>
+          
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="col-sm-4 col-sm-push-5">
+          
+        </div>
+        
+      </div>
+
+    </div>
     <!-- Wrapper Start -->
     <section id="intro">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-md-7 col-sm-12">
-            <div class="block">
-              <div class="section-title">
-                <h2>About Me</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+          <div class="col-md-8 col-sm-8">
+            <div class="block row">
+              <div class="col-md-3 col-sm-12">
+                <img src="img/aboutme.png" alt="">
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p>
+              <div class="col-md-8 col-sm-12">
+                <div class="section-title">
+                  <h2>About Me</h2>
+                  <h4>Hi There, I'm Karim a Software Engineer based in Toronto, I worked at 3 Ways International Logistics as Computer Engineer.</h4>
+                  <p>I discovered computers at the age of 16 and since then, I have to my credit three brand new machines that I spoil because at my beginnings I was always tinkering with my PCs which earned me spend a year without PC because my parents were fed up. Since this very hard period I have never spoiled a PC and all my computers that followed this event are still functional. Thanks to my nonsense I have a deep knowledge of the computer tool so a real concern for the memory occupied by my data structures and the speed of the codes that I execute.
+                    In a team I am the one who always cares about the respect of good practices and standards even if the code is functional; then the principles such as DRY (Don't Repeat Yourself), KISS ('Keep it Simple Stupid'), SOLID I force myself to respect them on a daily basis.</p>
+                  <p>Having experienced several languages like php, C #, Java SE, Java EE etc but today I feel more comfortable with JavaScript because in a word it is the future; There is something for everyone you want a real-time application NodeJs-socket.io, you want a purely native app on the main os ios and android ReactNative, you want to develop a microservice architecture SenecaJS.</p>
+                </div>
+            
+              </div>
             </div>
           </div><!-- .col-md-7 close -->
-          <div class="col-md-5 col-sm-12">
+          <div class="col-md-4 col-sm-12">
             <div class="block">
               <img src="img/wrapper-img.gif" alt="Img">
             </div>
@@ -118,7 +148,163 @@
         </div>
       </div>
     </section>
-
+  <section class="animated fadeInUp" id="portfolio">
+        <!-- Portfolio Start -->
+        <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-md-push-5">
+                <h2> Projects </h2>
+              </div>
+            </div>
+        </div>
+        
+        <section id="portfolio-work">
+          <div class="container">
+              
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="block">
+                    <div class="portfolio-menu">
+                      <ul>
+                          <li class="filter" data-filter="all">Everything</li>
+                          <li class="filter" data-filter=".Websites">Websites</li>
+                          <li class="filter" data-filter=".Graphic">Mobile App</li> 
+                      </ul>
+                    </div>
+                    <div class="portfolio-contant">
+                      <ul id="portfolio-contant-active">
+                          <li class="mix Websites">
+                            <a href="https://netsecure243.com" target="_blank">
+                              <img src="img/portfolio/work2.jpg" alt="">
+                              <div class="overly">
+                                <div class="position-center">
+                                  <h2>NETSECURE 243</h2>
+                                  <p>Is an Ecommerce website, to sell Network Security equipments like Access control, anti virus etc ... </p>
+                                  
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="mix Websites">
+                            <a href="#">
+                              <img src="img/portfolio/work1.jpg" alt="">
+                              <div class="overly">
+                                <div class="position-center">
+                                  <h2>NEXT-FLY</h2>
+                                  <p>Inspired by the sharing economy model like Airbnb, Next-Fly is a platform enabling contact between travelers and people wishing to transmit parcels in their country of destination</p>
+                                  
+                                </div>
+                              </div>
+                            </a>
+                        </li>
+                        
+                        <li class="mix Websites">
+                          <a href="https://register.digit-space.com/" target="_blank">
+                            <img src="img/portfolio/work3.jpg" alt="">
+                            <div class="overly">
+                              <div class="position-center">
+                                <h2>SMART-REGISTER</h2>
+                                <p>Website dedicated to the smart register app where users can renew their subscriptions, find out how to use the application, etc.</p>
+                                
+                              </div>
+                            </div>
+                            
+                          </a>
+                        </li>
+                        <li class="mix Graphic">
+                          <a href="https://www.dropbox.com/sh/r0y1nofcuoq1u1i/AADJ4ZqF0xASSc0Vk_NPs0SEa?dl=0" target="_blank">
+                            <img src="img/portfolio/work4.jpg" alt="">
+                            <div class="overly">
+                              <div class="position-center">
+                                <h2>LETJOBING</h2>
+                                <p>A mobile application that allows you to post and search for small jobs around you</p>
+                                
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="mix Graphic">
+                          <a href="https://bit.ly/2HdSvm5" target="_blank">
+                            <img src="img/portfolio/work5.jpg" alt="">
+                            <div class="overly">
+                              <div class="position-center">
+                                <h2>SMART REGISTER APP</h2>
+                                <p>Is a mobile application that allows teachers to calculate and manage the academic results of their students from their phone</p>
+                                
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="mix Graphic">
+                          <a href="https://www.dropbox.com/s/ldq2r8zo4b4g2aj/kincab.apk?dl=0" target="_blank">
+                            <img src="img/portfolio/work6.jpg" alt="">
+                            <div class="overly">
+                              <div class="position-center">
+                                <h2>KINCAB</h2>
+                                <p>A small per-minute billing application for Independent Drivers</p>
+                                
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </section>
+  
+      <!-- languages logo -->
+      <section id="clients-logo-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="block">
+                <div id="clients-logo" class="owl-carousel">
+                  <div class="clients-logo-img">
+                    <img src="img/clients/clients-logo1.png" alt="Features">
+                  </div>
+                  <div class="clients-logo-img">
+                    <img src="img/clients/clients-logo2.png" alt="Features">
+                  </div>
+                  <div class="clients-logo-img">
+                    <img src="img/clients/clients-logo3.png" alt="Features">
+                  </div>
+                  <div class="clients-logo-img">
+                    <img src="img/clients/clients-logo4.png" alt="Features">
+                  </div>
+                  <div class="clients-logo-img">
+                    <img src="img/clients/clients-logo6.png" alt="Features">
+                  </div>
+                  <div class="clients-logo-img">
+                    <img src="img/clients/clients-logo3.png" alt="Features">
+                  </div>
+                  <div class="clients-logo-img">
+                    <img src="img/clients/clients-logo2.png" alt="Features">
+                  </div>
+                  <div class="clients-logo-img">
+                    <img src="img/clients/clients-logo5.png" alt="Features">
+                  </div>
+                  <div class="clients-logo-img">
+                    <img src="img/clients/clients-logo1.png" alt="Features">
+                  </div>
+                  <div class="clients-logo-img">
+                    <img src="img/clients/clients-logo4.png" alt="Features">
+                  </div>
+                  <div class="clients-logo-img">
+                    <img src="img/clients/clients-logo7.png" alt="Features">
+                  </div>
+                  <div class="clients-logo-img">
+                    <img src="img/clients/clients-logo3.png" alt="Features">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </section>
   <section id="feature">
     <div class="container">
       <div class="row">
@@ -157,13 +343,13 @@
             <div class="block">
               <form>
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Your Name">
+                  <input type="text" class="form-control" placeholder="Your Name" id="form_name">
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Email Address">
+                  <input type="email" class="form-control" placeholder="Email Address" id="form_email">
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Subject">
+                  <input type="text" class="form-control" placeholder="Subject (optional)" id="form_subject">
                 </div>
               </form>
             </div>
@@ -172,9 +358,9 @@
             <div class="block">
               <form>
                 <div class="form-group-2">
-                  <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+                  <textarea class="form-control" rows="3" placeholder="Your Message" id="form_message"></textarea>
                 </div>
-                <button class="btn btn-default" type="submit">Send Message</button>
+                <button class="btn btn-default envoiMail" >Send Message</button>
               </form>
             </div>
           </div>
@@ -235,9 +421,9 @@
           <div class="col-md-12">
             <div class="footer-manu">
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Education & Experience</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Education & Experience</a></li>
+                <li><a href="portefolio.html">Portfolio</a></li>
                 <li><a href="#">Others</a></li>
                 
               </ul>

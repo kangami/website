@@ -366,6 +366,31 @@ font header .navbar-default .navbar-nav li a:hover {
   position: relative;
   background-attachment: fixed;
 }
+.name{
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #429de3;
+}
+.resume{
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+}
+.poste{
+  text-align: inherit;
+  font-size: medium;
+  
+} 
+header{
+  border-bottom: 1px solid gray;
+}
+
+
+#portfolio{
+  background: linear-gradient(to left, #b1a3f7, #429de3 40%);
+  color: white;
+}
 #global-header:before {
   content: "";
   position: absolute;
@@ -409,8 +434,12 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-bottom: 30px;
   text-align: center;
 }
+.portfolio-menu ul li{
+  color: white;
+}
 #portfolio-work .block .portfolio-menu ul {
-  border: 1px solid #999999;
+  border: 1px solid white;
+  
   display: inline-block;
   margin-bottom: 40px;
 }
